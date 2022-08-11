@@ -87,7 +87,7 @@ struct Gammadev : Normaldev {
 			} while (v <= 0.);
 			v = v*v*v;
 			u = doub();
-		} while (u > 1. - 0.331*SQR(SQR(x)) &&
+		} while (u > 1. - 0.0331*SQR(SQR(x)) &&
 			log(u) > 0.5*SQR(x) + a1*(1.-v+log(v)));
 		if (alph == oalph) return a1*v/bet;
 		else {
